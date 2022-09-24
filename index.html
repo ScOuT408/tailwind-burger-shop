@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- fav icon  -->
+    <link rel="shortcut icon" type="image/PNG" href="./images/logo.png" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome/ion icons cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Banzo Burger</title>
+  </head>
+  <body class="font-playfair">
+    <!-- header section code starts  -->
+    <header
+      class="py-4 px-10 w-full z-10 fixed top-0 left-0 bg-slate-50 shadow-md lm:py-2 lm:px-5"
+    >
+      <div class="flex items-center justify-between w-full">
+        <a href="#">
+          <div class="flex items-center">
+            <img
+              src="./images/logo.png"
+              alt=""
+              class="w-[60px] bg-slate-100 border-[1.7px] border-neutral-500 rounded-full shadow-md"
+            />
+          </div>
+        </a>
+
+        <nav>
+          <ul class="navbar">
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li>
+              <a href="#">products</a>
+            </li>
+            <li>
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <div
+            class="w-9 h-8 bg-amber-400 flex cursor-pointer items-center justify-center shadow-md"
+          >
+            <i class="fa-regular fa-cart-shopping text-slate-100"></i>
+          </div>
+          <div
+            class="w-9 h-8 bg-amber-400 flex cursor-pointer items-center justify-center shadow-md"
+          >
+            <i class="fa-regular fa-user text-slate-100"></i>
+          </div>
+          <div
+            class="hidden w-9 h-8 md:flex cursor-pointer items-center justify-center shadow-md border-[1.5px] border-neutral-500"
+          >
+            <i class="fa-regular fa-bars text-md" id="menu"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header section code ends -->
+    <!-- home section code starts  -->
+    <div
+      class="flex items-center justify-start w-full h-screen bg-[url('/images/home-3.jpeg')] bg-cover bg-no-repeat bg-center object-cover md:bg-left"
+    >
+      <div class="max-w-lg mt-9 ml-14 text-white p-4 md:ml-0">
+        <div>
+          <h2 class="text-3xl capitalize mb-2 tracking-wider md:text-2xl">
+            some big text here
+          </h2>
+          <p class="text-base leading-7 w-full">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+            nisi consequatur sit voluptatum illo sed illum saepe quisquam in
+            neque ab praesentium nesciunt tenetur et doloremque
+          </p>
+          <a
+            href="#"
+            class="inline-block mt-3 py-2 text-xl font-bold px-6 rounded-sm shadow-lg bg-amber-500 duration-200 hover:opacity-90 md:py-2 md:px-7 md:text-base"
+          >
+            Order Now
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- home section code ends -->
+
+    <!-- small banner section code starts  -->
+    <div
+      class="max-w-6xl my-20 md:my-10 flex items-center justify-center gap-2 mx-auto z-30 md:flex-wrap p-2"
+    >
+      <div class="relative text-white shadow-md">
+        <img src="./images/small-banner.jpeg" alt="" class="object-cover" />
+        <div
+          class="absolute top-16 left-16 bottom-16 xsm:top-5 xsm:left-5 capitalize font-bold"
+        >
+          <h2 class="text-2xl xsm:text-[18px] tracking-wider">
+            spicy and tasty
+          </h2>
+          <a href="#" class="text-amber-500 text-xl xsm:text-[14px]">
+            check out
+          </a>
+        </div>
+      </div>
+      <div class="relative text-white shadow-md">
+        <img src="./images/small-banner-2.jpeg" alt="" class="object-cover" />
+        <div
+          class="absolute top-16 left-16 bottom-16 xsm:top-5 xsm:left-5 capitalize font-bold"
+        >
+          <h2 class="text-2xl xsm:text-[18px] tracking-wider">fresh buns</h2>
+          <a href="#" class="text-amber-500 text-xl xsm:text-[14px]">
+            check out
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- small banner section code ends -->
+
+    <!-- featured products section code starts  -->
+    <div class="max-w-6xl mx-auto px-4 mb-10">
+      <div
+        class="flex items-center justify-start text-3xl mb-10 md:justify-center lm:text-2xl"
+      >
+        Featured&nbsp; <span class="text-amber-500"> Products &#8595; </span>
+      </div>
+      <div
+        class="grid gap-6 grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mt-6 mb-5"
+      >
+        <div
+          class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+        >
+          <div class="flex items-center justify-center h-56 w-full">
+            <img
+              src="./images/burger-1.jpg"
+              alt=""
+              class="object-cover !h-full !w-full hover:scale-105 duration-300"
+            />
+          </div>
+          <div class="px-3 py-3">
+            <div class="flex items-center justify-between">
+              <div class="text-xl font-normal">
+                <h2>Vagitable Burger</h2>
+                <p>$30.00</p>
+              </div>
+              <div>
+                <button
+                  class="p-2 rounded-full bg-amber-500 text-white mx-2 -mb-4 hover:bg-amber-400 focus:outline-none focus:bg-amber-400"
+                >
+                  <svg
+                    class="h-5 w-5"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+        >
+          <div class="flex items-center justify-center h-56 w-full">
+            <img
+              src="./images/burger-2.jpg"
+              alt=""
+              class="object-cover !h-full !w-full hover:scale-105 duration-300"
+            />
+          </div>
+          <div class="px-3 py-3">
+            <div class="flex items-center justify-between">
+              <div class="text-xl font-normal">
+                <h2>Vagitable Burger</h2>
+                <p>$30.00</p>
+              </div>
+              <div>
+                <button
+                  class="p-2 rounded-full bg-amber-500 text-white mx-2 -mb-4 hover:bg-amber-400 focus:outline-none focus:bg-amber-400"
+                >
+                  <svg
+                    class="h-5 w-5"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+        >
+          <div class="flex items-center justify-center h-56 w-full">
+            <img
+              src="./images/burger-3.jpg"
+              alt=""
+              class="object-cover !h-full !w-full hover:scale-105 duration-300"
+            />
+          </div>
+          <div class="px-3 py-3">
+            <div class="flex items-center justify-between">
+              <div class="text-xl font-normal">
+                <h2>Vagitable Burger</h2>
+                <p>$30.00</p>
+              </div>
+              <div>
+                <button
+                  class="p-2 rounded-full bg-amber-500 text-white mx-2 -mb-4 hover:bg-amber-400 focus:outline-none focus:bg-amber-400"
+                >
+                  <svg
+                    class="h-5 w-5"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+        >
+          <div class="flex items-center justify-center h-56 w-full">
+            <img
+              src="./images/burger-4.jpg"
+              alt=""
+              class="object-cover !h-full !w-full hover:scale-105 duration-300"
+            />
+          </div>
+          <div class="px-3 py-3">
+            <div class="flex items-center justify-between">
+              <div class="text-xl font-normal">
+                <h2>Vagitable Burger</h2>
+                <p>$30.00</p>
+              </div>
+              <div>
+                <button
+                  class="p-2 rounded-full bg-amber-500 text-white mx-2 -mb-4 hover:bg-amber-400 focus:outline-none focus:bg-amber-400"
+                >
+                  <svg
+                    class="h-5 w-5"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- featured products section code ends -->
+
+    <!-- main banner section code starts  -->
+    <div
+      class="flex items-center justify-start w-full h-[55vh] bg-[url('/images/banner.jpg')] bg-cover bg-no-repeat bg-center object-cover md:bg-left"
+    >
+      <div class="max-w-lg mt-2 ml-14 text-slate-200 p-4 md:ml-4">
+        <div>
+          <h2 class="capitalize text-3xl font-medium mb-2 md:text-xl">
+            upto 30% off
+          </h2>
+          <div class="capitalize text-4xl font-medium md:text-xl">
+            on every order above $40
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main banner section code ends -->
+
+    <!-- service section code starts  -->
+    <div class="max-w-5xl mx-auto px-4 mt-10 mb-6">
+      <div
+        class="flex items-center justify-start text-3xl mb-10 md:justify-center lm:text-2xl"
+      >
+        Our&nbsp; <span class="text-amber-500"> Services &#8595; </span>
+      </div>
+      <div
+        class="grid grid-cols-3 gap-4 text-center md:grid-cols-2 lm:grid-cols-1"
+      >
+        <div
+          class="w-full border-[1px] border-amber-400 shadow-md !mx-auto p-4"
+        >
+          <div class="flex items-center justify-center gap-5">
+            <div
+              class="w-20 h-20 bg-amber-400 !flex !items-center !justify-center rounded-full shadow-md"
+            >
+              <i
+                class="fa-regular fa-person-biking-mountain w-full h-full !flex !items-center !justify-center text-3xl text-amber-100"
+              ></i>
+            </div>
+            <div class="!text-left">
+              <h2 class="text-2xl font-semibold capitalize mb-1 md:text-xl">
+                fast delivery
+              </h2>
+              <p class="text-base font-semibold capitalize text-slate-600">
+                under 40 minutes
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full border-[1px] border-amber-400 shadow-md !mx-auto p-4"
+        >
+          <div class="flex items-center justify-center gap-5">
+            <div
+              class="w-20 h-20 bg-amber-400 !flex !items-center !justify-center rounded-full shadow-md"
+            >
+              <i
+                class="fa-regular fa-mobile w-full h-full !flex !items-center !justify-center text-3xl text-amber-100"
+              ></i>
+            </div>
+            <div class="!text-left">
+              <h2 class="text-2xl font-semibold capitalize mb-1 md:text-xl">
+                app available
+              </h2>
+              <p
+                class="text-base font-semibold capitalize text-slate-600 md:text-sm"
+              >
+                both ios & android
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full border-[1px] border-amber-400 shadow-md !mx-auto p-4"
+        >
+          <div class="flex items-center justify-center gap-5">
+            <div
+              class="w-20 h-20 bg-amber-400 !flex !items-center !justify-center rounded-full shadow-md"
+            >
+              <i
+                class="fa-sharp fa-solid fa-headset w-full h-full !flex !items-center !justify-center text-3xl text-amber-100"
+              ></i>
+            </div>
+            <div class="!text-left">
+              <h2 class="text-2xl font-semibold capitalize mb-1 md:text-xl">
+                24/7 support
+              </h2>
+              <p class="text-base font-semibold capitalize text-slate-600">
+                instant response
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- service section code ends -->
+
+    <!-- footer section code starts  -->
+    <div
+      class="w-[100%] mx-auto px-14 mt-20 p-4 mb-4 border-t-[1px] border-t-slate-500 md:p-5"
+    >
+      <div class="grid grid-cols-4 pt-4 gap-6 md:grid-cols-2 lm:grid-cols-1">
+        <div class="w-full text-center md:text-left">
+          <a href="#">
+            <div class="flex items-center justify-center md:justify-start">
+              <img
+                src="./images/logo.png"
+                alt=""
+                class="w-[60px] bg-slate-100 border-[1.7px] border-neutral-500 rounded-full shadow-md"
+              />
+            </div>
+          </a>
+          <h2 class="mt-6 capitalize text-2xl tracking-wide">banzo burger</h2>
+        </div>
+        <div
+          class="w-full flex items-center justify-center flex-col md:justify-start md:items-start"
+        >
+          <h2 class="capitalize font-medium text-xl">all links</h2>
+
+          <ul
+            class="mt-2 inline-block text-left -ml-4 text-base capitalize font-medium text-slate-700 md:ml-0"
+          >
+            <li class="mb-2"><a href="#"> home </a></li>
+            <li class="mb-2"><a href="#"> products </a></li>
+            <li class="mb-2"><a href="#"> contact </a></li>
+          </ul>
+        </div>
+        <div
+          class="w-full flex items-center justify-center flex-col md:justify-start md:items-start"
+        >
+          <h2 class="capitalize font-medium -ml-12 text-xl md:ml-0">support</h2>
+
+          <ul
+            class="mt-2 inline-block text-left text-base capitalize font-medium text-slate-700"
+          >
+            <li class="mb-2"><a href="#"> online support </a></li>
+            <li class="mb-2"><a href="#"> instant response </a></li>
+            <li class="mb-2"><a href="#"> submit request </a></li>
+          </ul>
+        </div>
+        <div
+          class="w-full flex items-center justify-center flex-col md:justify-start md:items-start"
+        >
+          <h2 class="capitalize font-medium text-xl">download the app</h2>
+
+          <div class="flex items-start justify-start gap-4 w-[60%] mt-2">
+            <img src="./images/app.png" alt="" class="w-28 md:w-32 md:-ml-2" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section code ends -->
+
+    <!-- credit section code starts  -->
+    <div
+      class="text-center font-bold text-xl capitalize pt-4 py-3 px-3 md:text-base"
+    >
+      created by <span class="text-amber-500"> biswajeet dash </span> 2022 | all
+      rights reserved
+    </div>
+    <!-- credit section code ends -->
+
+    <!-- custom js file  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
